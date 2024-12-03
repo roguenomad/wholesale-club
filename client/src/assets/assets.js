@@ -23,7 +23,44 @@ export const assets = {
 }
 
 export const products = [
-    {
-        
-    }
+   {
+    _id: "aaaa",
+    name: 'Monjaro',
+    description: 'Lorem ipsum',
+    price: 100,
+    image: [monjaro],
+    dose: ['100mg', '200mg'],
+    bestseller: true
+   },
+   {
+    _id: "aaaa",
+    name: 'Monjaro',
+    description: 'Lorem ipsum',
+    price: 100,
+    image: [monjaro],
+    dose: ['100mg', '200mg'],
+    bestseller: true
+   },
+   {
+    _id: "aaaa",
+    name: 'Monjaro',
+    description: 'Lorem ipsum',
+    price: 100,
+    image: [monjaro],
+    dose: ['100mg', '200mg'],
+    bestseller: true
+   },
+   {
+    _id: "aaaa",
+    name: 'Monjaro',
+    description: 'Lorem ipsum',
+    price: 100,
+    image: [monjaro],
+    dose: ['100mg', '200mg'],
+    bestseller: true
+   }
+    // {id: 1, name: "Product 1", price: 10.99},
+    // {id: 1, name: "Product 1", price: 10.99},
+    // {id: 1, name: "Product 1", price: 10.99},
+
 ]

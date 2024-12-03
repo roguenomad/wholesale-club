@@ -7,6 +7,10 @@
 body {
     background-color: #e9ebef;
 }
+:root {
+    --green: #217126;
+    --blue: #2A1BA8;
+}
 
 
 /* 
@@ -63,13 +67,13 @@ body {
 
 a:hover hr {
     visibility: visible;
-    color: #217126;
+    color: var(--green);
     width: 10vh;
 }
 
 a:focus hr {
     visibility: visible;
-    color: #217126;
+    color: var(--green);
     width: 10vh;
 }
 
@@ -136,7 +140,7 @@ a:focus hr {
 }
 
 .hero h3 {
-    color: #217126;
+    color: var(--green);
     /* text-align: center; */
     font-size: 1.5vw;
     width: 70%;
@@ -170,7 +174,7 @@ a:focus hr {
 .main-content p {
     padding-top: 1vh;
     text-align: left;
-    color: #2A1BA8;
+    color: var(--blue);
     width: 20vw;
     font-size: 1vw;
     background-color: transparent;
@@ -196,7 +200,7 @@ a:focus hr {
     margin-top: 3vh;
     height: 5vh;
     width: 20vh;
-    background-color: #217126;
+    background-color: var(--green);
     border: none;
     border-radius: 25px;
     cursor: pointer;
@@ -207,7 +211,7 @@ a:focus hr {
 }
 
 .all-pro-but span {
-    background-color: #217126;
+    background-color: var(--green);
     color: #fff;
 }
 
@@ -257,10 +261,10 @@ a:focus hr {
 }
 
 .hexagon {
-    height: 8vw;
+    /* height: 8vw; */
     aspect-ratio: cos(30deg);
     clip-path: polygon(-50% 50%,50% 100%,150% 50%,50% 0);
-    background: #217126;
+    background: var(--green);
     /* text-align: center; */
     display: flex;
     align-self: center;
@@ -287,6 +291,36 @@ a:focus hr {
 .card p {
     width: 25vw;
 }
+
+/***Featured Collection***/
+
+.featured-cards {
+    display: flex;
+    align-self: center;
+    justify-self: center;
+}
+
+.featured p {
+    color: var(--blue);
+}
+
+.featured-card {
+    background-color: #fff;
+    padding: 1vh;
+    margin: 2vh;
+    border-radius: 5px;
+    width: 25vw;
+    height: auto;
+    /* display: flex;
+    align-self: center;
+    justify-self: center; */
+}
+
+.featured-card img {
+    width: 21vw;
+    height: 25vh;
+}
+
 
 
 /***** Responsive *****/
