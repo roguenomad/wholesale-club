@@ -10,22 +10,22 @@ const Cards = () => {
                     <div className='hexagon'>
                         <img src={assets.delivery} className='card-icon' alt="" />
                     </div>
-                    <h4>Fast Free Delivery</h4>
-                    <p className='card-p'>International shipping can be confusing and complicated. We have years of experience dealing with global carriers to ensure faster delivery.</p>
+                    <h4>Fast, Free Delivery You Can Count On</h4>
+                    <p className='card-p'>With years of experience working with global carriers, we simplify international shipping to ensure your orders arrive quickly and hassle-free.</p>
                 </div>
                 <div className="card">
                     <div className='hexagon'>
                         <img src={assets.reliability} className='card-icon' alt="" />
                     </div>
-                    <h4>Reliability</h4>
-                    <p className='card-p'>Our purpose is to ensure you recieve the finest quality name brands. We work closely with the manufacturers, distributors and pharmacies.</p>
+                    <h4>Trusted Quality Name-Brand Products</h4>
+                    <p className='card-p'>We partner with top manufacturers, distributors, and pharmacies to deliver reliable, premium-quality same name brands that you know and trust.</p>
                 </div>
                 <div className="card">
                     <div className='hexagon'>
                         <img src={assets.safety} className='card-icon' alt="" />
                     </div>
-                    <h4>Guarantee</h4>
-                    <p className='card-p'>All products are manufactured in accordance with industry set standards, using only quality assured ingredients.</p>
+                    <h4>Guaranteed Quality with Every Product</h4>
+                    <p className='card-p'>We distribute products made with rigorously tested ingredients and produced to meet strict industry standards, ensuring safe, effective, and reliable options for your health needs.</p>
                 </div>
             </div>
        

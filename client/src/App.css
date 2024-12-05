@@ -31,10 +31,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* padding: 3vh 2vh; */
     border-bottom: 2px solid #217126;
-    /* width: 100vw;
-    height: 25vw; */
 }
 
 .logo {
@@ -99,9 +96,6 @@ a:focus hr {
 .cart-count p {
     color: #000;
 }
-/* .cart-count {
-    color: #000;
-} */
 .shopping-cart:hover {
     cursor: pointer;
 }
@@ -122,28 +116,18 @@ a:focus hr {
 
 /***Home Page***/
 
-.hero {
+/* .hero {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    /* align-self: center; */
-    /* padding: 5vw; */
-    /* width: 90vw; */
-}
+} */
 
-.hero-img-content {
-    margin-left: 40vw;
-    /* position: absolute; */
-    /* float: right; */
-    /* display: flex;
-    justify-content: right; */
+.hero-image {
+    background: url("./assets/main-image.jpg");
 }
 
 .hero h3 {
     color: var(--green);
-    /* text-align: center; */
-    font-size: 1.5vw;
-    width: 70%;
+    /* font-size: 1.5vw;
+    width: 70%; */
     text-align: center;
     font-family: "Lora", serif;
     font-optical-sizing: auto;
@@ -153,22 +137,12 @@ a:focus hr {
 
 
 .main-content {
-    /* text-align: center; */
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
-    /* width: 2vw; */
-    /* height: 100vw; */
-    position: absolute;
-    background-color: transparent;
     margin-right: 35vh;
 }
 
 .main-header {
-    /* text-align: left; */
-    font-size: 4vw;
-    width: 52vw;
-    background-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
 }
 
 .main-content p {
@@ -184,35 +158,32 @@ a:focus hr {
 }
 
 .main-image {
+    /* position: absolute; */
+    /* width: 100%; */
     width: 70%;
     border-radius: 25px;
-    /* box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.24);
-    -webkit-box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.24);
-    -moz-box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.24); */
 }
 
-.hero-content {
+/* .hero-content {
 
-}
+} */
 
 .all-pro-but {
     font-size: 2vh;
     margin-top: 3vh;
     height: 5vh;
-    width: 20vh;
+    width: 22vh;
     background-color: var(--green);
     border: none;
     border-radius: 25px;
     cursor: pointer;
     transition: all 0.5s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .all-pro-but span {
     background-color: var(--green);
     color: #fff;
+    margin-left: .5vh;
 }
 
 .all-pro-but:after {
@@ -224,7 +195,7 @@ a:focus hr {
 }
 
 .all-pro-but:hover {
-    width: 22vh;
+    width: 25vh;
 }
 
 .all-pro-but:hover:after {
@@ -245,7 +216,6 @@ a:focus hr {
     justify-self: center;
     padding: 1vh;
     width: 80vw;
-    /* height: 40vh; */
     background-color: #fff;
     border-radius: 25px;
     box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.24);
@@ -254,26 +224,20 @@ a:focus hr {
 }
 
 .cards {
-    padding-top: 2vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* width: 80vw; */
-    /* height: 20vh; */
+    /* display: flex;
+    align-self: center;
+    justify-self: center; */
 }
 
 .hexagon {
+    /* height: 15vw; */
     height: 8vw;
     aspect-ratio: cos(30deg);
     clip-path: polygon(-50% 50%,50% 100%,150% 50%,50% 0);
     background: var(--green);
-    /* text-align: center; */
     display: flex;
     align-self: center;
     justify-self: center;
-    /* outline: 5px solid blue; */
-    /* border: 1px solid black;
-    outline-property:  */
   }
 
   .hexagon:hover {
@@ -283,41 +247,24 @@ a:focus hr {
   }
 
   .card-icon {
-    width: 3vw;
-    height: 3vw;
-    /* display: block; */
-    /* margin-left: auto;
-    margin-right: auto; */
+    /* width: 3vw;
+    height: 3vw; */
     margin: auto;
     width: 50%;
-    /* margin-left: 2vw;
-    margin-top: 1.5vw; */
   }
 
 .card {
-    /* display: flex;
-    align-self: center;
-    justify-self: center; */
     /* width: 33%; */
-    /* height: 100%; */
     text-align: center;
     padding: 2.5vh;
-    /* width: 20vw; */
-    /* background-color: #fff; */
 }
 
-.card-p {
-    /* width: 50vh; */
-    /* text-align: center; */
-}
+/* .card-p {
+} */
 
 /***Featured Collection***/
 
-.featured-cards {
-    display: flex;
-    align-self: center;
-    justify-self: center;
-}
+
 
 .featured h3 {
     text-align: center;
@@ -387,14 +334,110 @@ a:link {
         visibility: hidden;
     }
 
+    /**Landing Page**/
+    .hero {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main-content {
+        position: absolute;
+    }
+
+    .hero-img-content {
+        margin-left: 40vw;
+    }
+    .main-header {
+        font-size: 4vw;
+        width: 52vw;
+    }
+    .hero h3 {
+        font-size: 1.5vw;
+        width: 70%;
+    }
+
+
+    .cards {
+        padding-top: 2vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card {
+        /* width: 100%; */
+    }
+
+    /**Feat Products**/
+    .featured-cards {
+        display: flex;
+        align-self: center;
+        justify-self: center;
+    }
+
+
+
 }
 
 
 @media screen and (max-width: 768px) {
    
     /**Hero**/
+    .hero {
+        /* display: flex;
+        align-items: center;
+        justify-content: center; */
+    }
     .main-image{
-        width: 50vw;
+        width: 100%;
+        /* padding: 5vh; */
+    }
+    .main-content {
+        /* position: absolute; */
+        /* display: flex;
+        align-items: center; */
+        /* justify-self: center; */
+        margin-top: -35vh;
+        margin-left: 2vw;
+        font-size: 5vw;
+        color: var(--green);
+        /* background-color: var(--green); */
+        /* white-space: no-wrap; */
+    }
+    .main-content p {
+        visibility: hidden;
+    }
+
+    .all-pro-but {
+        margin: 0;
+        /* width: 25vw; */
+    }
+
+    /* .main-content h1 {
+        background-color: #217126;
+    } */
+    /* .main-header h1 {
+        color: var(--green);
+    } */
+
+    /**Cards**/
+    .card-container {
+        /* width: 80%; */
+    }
+
+    .hexagon {
+        height: 25vw;
+    }
+
+    .cards{
+        overflow: hidden;
+
+        /* width: 100%; */
+    }
+
+    .card {
+        
     }
 
 }
