@@ -13,8 +13,8 @@ const ProductItem = ({id,image,name,price}) => {
           <div className=''>
               <img src={image[0]} alt=''/>
           </div>
-          <p>{name}</p>
-          <p>{currency}{price}</p>
+          <p className='feat-card-name'>{name}</p>
+          <p className='feat-card-price'>{currency}{price}</p>
       </div>
     </Link>
   )

@@ -16,7 +16,7 @@ const FeaturedCollection = () => {
     <div>
         <div className='featured'>
             <h3>Our Products</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi a augue consequat, malesuada mi ut, pharetra nunc. Praesent sagittis posuere convallis. Aliquam elementum, risus sed luctus viverra, tellus sapien pulvinar mauris, non ornare dolor nibh sit amet purus.</p>
+            <p>We have medicine at over 50% to 80% in savings. Order now before supplies last.</p>
         </div>
 
         {/* Product Rendering */}

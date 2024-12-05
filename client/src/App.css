@@ -245,7 +245,7 @@ a:focus hr {
     justify-self: center;
     padding: 1vh;
     width: 80vw;
-    height: 40vh;
+    /* height: 40vh; */
     background-color: #fff;
     border-radius: 25px;
     box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.24);
@@ -258,10 +258,12 @@ a:focus hr {
     display: flex;
     align-items: center;
     justify-content: center;
+    /* width: 80vw; */
+    /* height: 20vh; */
 }
 
 .hexagon {
-    /* height: 8vw; */
+    height: 8vw;
     aspect-ratio: cos(30deg);
     clip-path: polygon(-50% 50%,50% 100%,150% 50%,50% 0);
     background: var(--green);
@@ -269,11 +271,25 @@ a:focus hr {
     display: flex;
     align-self: center;
     justify-self: center;
+    /* outline: 5px solid blue; */
+    /* border: 1px solid black;
+    outline-property:  */
+  }
+
+  .hexagon:hover {
+    opacity: 1;
+    -webkit-animation: flash 2s;
+    animation: flash 2s;
   }
 
   .card-icon {
-    /* width: 30px;
-    height: 30px; */
+    width: 3vw;
+    height: 3vw;
+    /* display: block; */
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin: auto;
+    width: 50%;
     /* margin-left: 2vw;
     margin-top: 1.5vw; */
   }
@@ -282,14 +298,17 @@ a:focus hr {
     /* display: flex;
     align-self: center;
     justify-self: center; */
-    width: 33%;
-    height: 100%;
+    /* width: 33%; */
+    /* height: 100%; */
     text-align: center;
+    padding: 2.5vh;
+    /* width: 20vw; */
     /* background-color: #fff; */
 }
 
-.card p {
-    width: 25vw;
+.card-p {
+    /* width: 50vh; */
+    /* text-align: center; */
 }
 
 /***Featured Collection***/
@@ -300,8 +319,15 @@ a:focus hr {
     justify-self: center;
 }
 
+.featured h3 {
+    text-align: center;
+    margin-top: 5vh;
+    font-size: 2vw;
+}
+
 .featured p {
     color: var(--blue);
+    text-align: center;
 }
 
 .featured-card {
@@ -309,7 +335,7 @@ a:focus hr {
     padding: 1vh;
     margin: 2vh;
     border-radius: 5px;
-    width: 25vw;
+    width: 12vw;
     height: auto;
     /* display: flex;
     align-self: center;
@@ -317,10 +343,39 @@ a:focus hr {
 }
 
 .featured-card img {
-    width: 21vw;
-    height: 25vh;
+    width: 12vw;
+    height: 28vh;
 }
 
+.featured-card p {
+    /* color: #000; */
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.feat-card-name {
+    color: #000;
+    font-weight: 700;
+    text-align: center;
+    font-size: 1vw;
+}
+
+.feat-card-price {
+    color: var(--blue);
+    font-size: 2vw;
+}
+
+
+@-webkit-keyframes flash {
+    0% {  opacity: .3;  }
+    100% { opacity: 1; }
+  }
+  @keyframes flash {
+    0% { opacity: .3; }
+    100% { opacity: 1;  }
+  }
 
 
 /***** Responsive *****/
