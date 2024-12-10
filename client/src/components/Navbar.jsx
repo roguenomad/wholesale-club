@@ -3,9 +3,18 @@ import { assets } from '../assets/assets'
 import '../App.css'
 import { Link, NavLink } from 'react-router-dom'
 
+
 const Navbar = () => {
 
-  // const [visible,setVisible] = useState(false);
+  const [isDropdownVisible, setDropdownVisible] = useState(false);
+
+  const handleMouseEnter = () => {
+    setDropdownVisible(true);
+  };
+
+  const handleMouseLeave = () => {
+    setDropdownVisible(false);
+  };
 
   return (
     <div className='navbar'>
@@ -16,32 +25,40 @@ const Navbar = () => {
             <NavLink to='/about' className='navlink'><p>About</p><hr /></NavLink>
             <NavLink to ='/contact' className='navlink'><p>Contact</p><hr /></NavLink>
         </ul>
-          <div className='shopping-cart'>
+        <div id="user-container">
+        <div className='shopping-cart'>
             <Link to='/cart' className='cart-container'>
+              <h4>$0.00</h4>
               <img src={assets.shoppingCart} className='cart-icon' alt="" />
-              {/* <p className='cart-count'>10</p> */}
             </Link>
-          <div>
-          <img src={assets.menuResp} className='menu-resp' alt="" />
-          <div>
-            <img onClick={() =>setVisible(true)} src={assets.profile} className='profile' alt="" />
-              {/* <div className='drop-down-menu'>
-                <p className='drop-down-item'>My Profile</p>
-                <p className='drop-down-item'>Orders</p>
-                <p className='drop-down-item'>Logout</p>
-              </div> */}
-          </div>
-                {/* <div className={`sidebar-menu ${visible ? 'width: 100%' : 'width: 0%'}`}>
-                  <div>
-                    <div onClick={()=>setVisible(false)}>
-                      <img className='back-arrow' src={assets.backArrow} />
-                      <p>Back</p>
-                    </div>
-                  </div>
-                </div> */}
-</div>
         </div>
-    </div>
+        <div className="user-profile" onMouseEnter={handleMouseEnter}
+           onMouseLeave={handleMouseLeave}>
+          <button><img src={assets.profile} className='profile' alt="" /></button>
+          {isDropdownVisible && (
+            <ul id="drop-down-menu">
+                  <Link to='/' className='drop-down-items'><p>My Profile</p></Link>
+                  <Link to='/' className='drop-down-items'><p>Orders</p></Link>
+                  <Link to='/' className='drop-down-items'><p>Logout</p></Link>
+             </ul>
+            )}
+          
+        
+        </div>
+          {/* <div>
+          <img src={assets.menuResp} className='menu-resp' alt="" />
+          
+            <div>
+            <ul id="drop-down-items">
+                  <Link to='/' className=''><p>My Profile</p><hr /></Link>
+                  <Link to='/' className=''><p>Orders</p><hr /></Link>
+                  <Link to='/' className=''><p>Logout</p><hr /></Link>
+                </ul>
+            </div>
+          
+        </div> */}
+      </div>
+      </div>
   )
 }
 

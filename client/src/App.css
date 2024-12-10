@@ -35,7 +35,7 @@ body {
 }
 
 .logo {
-    width: 20vw;
+    width: 60vw;
     padding: 0;
     margin: 0;
 }
@@ -65,54 +65,102 @@ body {
 a:hover hr {
     visibility: visible;
     color: var(--green);
-    width: 10vh;
+    width: 10vw;
 }
 
 a:focus hr {
     visibility: visible;
     color: var(--green);
-    width: 10vh;
+    width: 10vw;
 }
 
 
-
-.cart-container {
+#user-container {
+    width: 20vw;
     display: flex;
+}
+.cart-container {
+
 }
 .shopping-cart {
     display: flex;
+    align-items: center;
+    /* justify-self: space-evenly; */
     border: 2px solid #000;
-    width: 10vw;
+    /* width: auto; */
     height: 5vh;
+    padding: 0vh 2vh;
+    /* padding: 1vh; */
 }
 
-
+.cart-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
 .cart-icon {
-    width: 5vh;
-    height: 5vh;
+    padding-left: 2vh;
+    margin: 0;
 }
 
-.cart-count p {
-    color: #000;
-}
 .shopping-cart:hover {
     cursor: pointer;
 }
-
+.user-profile {
+    /* display: flex; */
+    /* position: absolute;
+    transform: translate(40vw, 10vh); */
+    border: 2px solid #000;
+    margin-left: 1.5vh;
+}
+.user-profile::after {
+    transition: 0.5s;
+}
+.user-profile:hover {
+    background-color: #e9ebef;
+    position: absolute;
+    border: 2px solid #000;
+    width: 15vh;
+    position: absolute;
+    transform: translate(16vh, 0vh);
+    /* transition: 0.1s; */
+}
+.user-profile button {
+    border: none;
+}
 .profile {
-    width: 5vh;
-    height: 5vh;
+    /* width: 5vh; */
+    height: 4vh;
 }
 
 .profile:hover {
     cursor: pointer;
 }
-
-.drop-down-menu {
-    border: 1px solid #000;
-    padding: 2px;
+#drop-down-menu {
+    padding: 0;
+    margin: 0 1.5vh;
+    text-align: left;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    /* list-style-type: none; */
+    /* padding: 3vh; */
 }
+.drop-down-menu:hover {
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.drop-down-items {
+    color: #000;
+    /* padding-right: 5vh; */
+}
+.drop-down-items:hover {
+    color: var(--blue);
+}
+
 
 /***Home Page***/
 
@@ -126,6 +174,7 @@ a:focus hr {
 
 .hero h3 {
     color: var(--green);
+    font-size: 4vw;
     /* font-size: 1.5vw;
     width: 70%; */
     text-align: center;
@@ -264,12 +313,10 @@ a:focus hr {
 
 /***Featured Collection***/
 
-
-
 .featured h3 {
     text-align: center;
     margin-top: 5vh;
-    font-size: 2vw;
+    font-size: 5vw;
 }
 
 .featured p {
@@ -277,21 +324,29 @@ a:focus hr {
     text-align: center;
 }
 
+.featured-cards {
+    margin: 5%;
+}
+
 .featured-card {
     background-color: #fff;
     padding: 1vh;
     margin: 2vh;
     border-radius: 5px;
-    width: 12vw;
-    height: auto;
+    width: 70vw;
+    height: 45vh;
+    /* margin: auto; */
+    /* width: 50%; */
+    /* padding: 10px; */
     /* display: flex;
     align-self: center;
     justify-self: center; */
 }
 
 .featured-card img {
-    width: 12vw;
-    height: 28vh;
+    width: 70vw;
+    height: 35vh;
+    /* height: 28vh; */
 }
 
 .featured-card p {
@@ -306,12 +361,12 @@ a:link {
     color: #000;
     font-weight: 700;
     text-align: center;
-    font-size: 1vw;
+    /* font-size: 1vw; */
 }
 
 .feat-card-price {
     color: var(--blue);
-    font-size: 2vw;
+    /* font-size: 2vw; */
 }
 
 
@@ -332,6 +387,16 @@ a:link {
     /**Navbar**/
     .menu-resp {
         visibility: hidden;
+    }
+    .logo {
+        width: 20vw;
+    }
+    a:hover hr {
+        width: 10vh;
+    }
+    
+    a:focus hr {
+        width: 10vh;
     }
 
     /**Landing Page**/
@@ -356,6 +421,7 @@ a:link {
         font-size: 1.5vw;
         width: 70%;
     }
+    
 
 
     .cards {
@@ -370,18 +436,33 @@ a:link {
     }
 
     /**Feat Products**/
+    .featured h3 {
+        font-size: 2.25vw;
+    }
     .featured-cards {
         display: flex;
         align-self: center;
         justify-self: center;
     }
-
+    .featured-card img {
+        width: 12vw;
+        height: 28vh;
+    }
+    .featured-card {
+        width: 12vw;
+        height: auto;
+    }
 
 
 }
 
 
 @media screen and (max-width: 768px) {
+
+    /**NavBar**/
+    /* .menu-resp {
+        visibility: hidden;
+    } */
    
     /**Hero**/
     .hero {
@@ -439,5 +520,12 @@ a:link {
     .card {
         
     }
+
+
+    /**Featured Cards**/
+    .featured-cards {
+        /* text-align: center; */
+        /* display: flex; */
+    } 
 
 }
