@@ -9,11 +9,11 @@ const FeaturedCollection = () => {
     const [latestProducts,setLatestProducts] = useState([]);
 
     useEffect(() => {
-        setLatestProducts(products.slice(0,3));
+        setLatestProducts(products.slice(0,5));
     }, [])
 
   return (
-    <div>
+    <div className='featured-container'>
         <div className='featured'>
             <h3>Our Products</h3>
             <p>We have medicine at over <b>50% to 80%</b> in savings. Order now while supplies last.</p>

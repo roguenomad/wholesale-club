@@ -25,7 +25,7 @@ const Cards = () => {
                         <img src={assets.safety} className='card-icon' alt="" />
                     </div>
                     <h4>Guaranteed Quality with Every Product</h4>
-                    <p className='card-p'>We distribute products made with rigorously tested ingredients and produced to meet strict industry standards, ensuring safe, effective, and reliable options for your health needs.</p>
+                    <p className='card-p'>We distribute products made to meet strict industry standards, ensuring safe, effective, and reliable options for your health care needs.</p>
                 </div>
             </div>
        

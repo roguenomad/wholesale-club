@@ -8,12 +8,14 @@ import backArrow from './back-arrow.png'
 import delivery from './delivery-icon.png'
 import reliability from './reliability-icon.png'
 import safety from './safety-icon.png'
+import infoImage from './male-pharm.png'
 
 export const assets = {
     monjaro,
     logo,
     shoppingCart,
     mainImage,
+    infoImage,
     profile,
     menuResp,
     backArrow,
