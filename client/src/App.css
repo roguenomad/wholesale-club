@@ -32,10 +32,13 @@ body {
   
 .navbar {
     display: flex;
+    flex-direction: column;
+    /* display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: center; */
     border-bottom: 2px solid #217126;
 }
+
 
 .logo {
     width: 60vw;
@@ -76,7 +79,7 @@ a:focus hr {
     color: var(--green);
     width: 10vw;
 }
-#user-container {
+.user-container {
     width: 20vw;
     display: flex;
 }
@@ -348,7 +351,7 @@ a:link {
     /* font-size: 2vw; */
 }
 
-
+/**Animations**/
 @-webkit-keyframes flash {
     0% {  opacity: .3;  }
     100% { opacity: 1; }
@@ -356,6 +359,14 @@ a:link {
   @keyframes flash {
     0% { opacity: .3; }
     100% { opacity: 1;  }
+  }
+
+  .grow { 
+    transition: all .2s ease-in-out; 
+  }
+  
+  .grow:hover { 
+    transform: scale(1.05); 
   }
 
   /**Information**/
@@ -442,13 +453,98 @@ a:link {
   }
 
 
+/**Featured Brands**/
+.fb-container {
+    text-align: center;
+    padding-bottom: 10vh;
+}
+
+.fb-brands-list {
+    background-color: var(--light-green);
+    width: 80vw;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    border-radius: 15px;
+    border: 1px solid #888;
+}
+.fb-text {
+    text-align: left;
+    width: 25vw;
+    padding: 5vh;
+    margin-bottom: 5vh;
+}
+.fb-text span {
+    font-size: 1vw;
+}
+.fb-text p {
+    font-size: 1vw
+}
+.fb-image {
+    width: 8vw;
+    /* height: 5vw; */
+    padding: 2vh;
+}
+
+.fb-logos {
+    width: 70vw;
+}
+
+
+/***Footer***/
+
+.footer-cont {
+    text-align: center;
+    background-color: #000;
+    height: 35vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.footer-logo h4 {
+    color: yellow;
+    font-size: 2vw;
+    padding-bottom: 1vh;
+    margin: 0;
+}
+.footer-logo h5 {
+    color: var(--green);
+    -webkit-text-stroke: .2px white;
+    font-family: "Lora", serif;
+    font-style: italic;
+    font-size: 3vh;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-faq h6 {
+    font-size: 1vw;
+    text-transform: capitalize;
+}
+
+.footer-faq button {
+    background-color: var(--green);
+    border: none;
+    border-radius: 15px;
+    width: 8vw;
+    height: 4vh;
+}
+
 /***** Responsive *****/
 
 @media screen and (min-width: 768px) {
 
     /**Navbar**/
-    .menu-resp {
+    /* .menu-resp {
         visibility: hidden;
+    } */
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
     }
     .logo {
         width: 20vw;
@@ -523,10 +619,7 @@ a:link {
 @media screen and (max-width: 768px) {
 
     /**NavBar**/
-    /* .menu-resp {
-        visibility: hidden;
-    } */
-   
+
     /**Hero**/
     .hero {
         /* display: flex;

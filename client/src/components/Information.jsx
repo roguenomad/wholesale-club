@@ -12,30 +12,30 @@ const Information = () => {
             <div className="info-about">
                 <div className="info-about-text">
                     <h5>Our Story</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi a augue consequat, malesuada mi ut, pharetra nunc. Praesent sagittis posuere convallis. Aliquam elementum, risus sed luctus viverra, tellus sapien pulvinar mauris, non ornare dolor nibh sit amet purus.</p>
+                    <p>At S&L Global Wholesale Club, we are committed to offering high-quality products that are both affordable and accessible. Our journey began in 2020, driven by our founders’ recognition of the limited options available to budget-conscious consumers and the excessive markups on globally sourced products. Today, we proudly provide a diverse selection of products at unbeatable wholesale prices, making quality accessible to all.</p>
                 </div>
                 <div className="info-about-text">
                     <h5>Our Mission</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi a augue consequat, malesuada mi ut, pharetra nunc. Praesent sagittis posuere convallis. Aliquam elementum, risus sed luctus viverra, tellus sapien pulvinar mauris, non ornare dolor nibh sit amet purus.</p>
+                    <p>We aim to empower everyone by providing access to affordable, high-quality products. Believing that essential treatments shouldn’t be reserved for the wealthy, we source globally and negotiate for the safest, most cost-effective options. Our commitment is to reduce costs while delivering the trusted products you need at unbeatable prices.</p>
                 </div>
             </div>
             <div className='info-links'>
-                <div className="info-link">
+                <div className="info-link grow">
                     <img src={assets.monjaro} className='info-link-img' alt="" />
                     <h4 className='info-link-text'>Weight Loss</h4>
                     <Link to='/'><button className='info-link-btn'>View</button> </Link>
                 </div>
-                <div className="info-link">
+                <div className="info-link grow">
                     <img src={assets.monjaro} className='info-link-img' alt="" />
                     <h4 className='info-link-text'>Impotence</h4>
                     <button className='info-link-btn'>View</button>
                 </div>
-                <div className="info-link">
+                <div className="info-link grow">
                     <img src={assets.monjaro} className='info-link-img' alt="" />
                     <h4 className='info-link-text'>Long-term</h4>
                     <button className='info-link-btn'>View</button>
                 </div>
-                <div className="info-link">
+                <div className="info-link grow">
                     <img src={assets.monjaro} className='info-link-img' alt="" />
                     <h4 className='info-link-text'>Future Care</h4>
                     <button className='info-link-btn'>View</button>

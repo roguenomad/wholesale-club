@@ -9,7 +9,7 @@ const ProductItem = ({id,image,name,price}) => {
 
   return (
     <Link to={`/product/${id}`}>
-      <div className='featured-card'>
+      <div className='featured-card grow'>
           <div className=''>
               <img src={image[0]} alt=''/>
           </div>

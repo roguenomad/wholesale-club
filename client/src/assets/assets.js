@@ -1,4 +1,17 @@
+import amgen from './amgen-trans.png'
+import astrazeneca from './astrazeneca-trans.png'
+import bayer from './bayer-trans.png'
+import johnson from './jo&jo.png'
+import merck from './merck-trans.png'
 import monjaro from "./monjaro.png"
+import mounj from './mounj-logo.png'
+import nova from './nova.png'
+import pfizer from './pfizer-trans.png'
+import pharma from './pharma.png'
+import pharPart from './pharma-partners.png'
+import rinvoq from './rinvoq.png'
+import scherPlo from './schering-plough.png'
+import victoza from './victoza.png'
 import logo from "./logo.png"
 import shoppingCart from './shopping-cart-icon.png'
 import mainImage from './main-image.jpg'
@@ -11,7 +24,19 @@ import safety from './safety-icon.png'
 import infoImage from './male-pharm.png'
 
 export const assets = {
-    monjaro,
+    amgen,
+    astrazeneca,
+    bayer,
+    johnson,
+    merck,
+    mounj,
+    nova,
+    pfizer,
+    pharma,
+    pharPart,
+    rinvoq,
+    scherPlo,
+    victoza,
     logo,
     shoppingCart,
     mainImage,
@@ -21,7 +46,8 @@ export const assets = {
     backArrow,
     delivery,
     reliability,
-    safety
+    safety,
+
 }
 
 export const products = [

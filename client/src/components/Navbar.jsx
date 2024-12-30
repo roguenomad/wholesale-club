@@ -17,33 +17,33 @@ const Navbar = () => {
   };
 
   return (
+    <div className="navbar-container">
     <div className='navbar'>
-        <NavLink to='/'><img src={assets.logo} className='logo' alt="" /></NavLink>
+        <NavLink to='/'><img src={assets.logo} className='logo second' alt="" /></NavLink>
         <ul className='links'>
             <NavLink to='/' className='navlink'><p>Home</p><hr /></NavLink>
             <NavLink to='/shop' className='navlink'><p>Shop</p><hr /></NavLink>
             <NavLink to='/about' className='navlink'><p>About</p><hr /></NavLink>
             <NavLink to ='/contact' className='navlink'><p>Contact</p><hr /></NavLink>
         </ul>
-        <div id="user-container">
-        <div className='shopping-cart'>
-            <Link to='/cart' className='cart-container'>
-              <h4>$0.00</h4>
-              <img src={assets.shoppingCart} className='cart-icon' alt="" />
-            </Link>
-        </div>
-        <div className="user-profile" onMouseEnter={handleMouseEnter}
-           onMouseLeave={handleMouseLeave}>
-          <button><img src={assets.profile} className='profile' alt="" /></button>
-          {isDropdownVisible && (
-            <ul id="drop-down-menu">
-                  <Link to='/' className='drop-down-items'><p>My Profile</p></Link>
-                  <Link to='/' className='drop-down-items'><p>Orders</p></Link>
-                  <Link to='/' className='drop-down-items'><p>Logout</p></Link>
-             </ul>
-            )}
-          
-        
+        <div id='third' className="user-container">
+          <div className='shopping-cart'>
+              <Link to='/cart' className='cart-container'>
+                <h4>$0.00</h4>
+                <img src={assets.shoppingCart} className='cart-icon' alt="" />
+              </Link>
+          </div>
+          <div className="user-profile" onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}>
+            <button><img src={assets.profile} className='profile' alt="" /></button>
+            {isDropdownVisible && (
+              <ul id="drop-down-menu">
+                    <Link to='/' className='drop-down-items'><p>My Profile</p></Link>
+                    <Link to='/' className='drop-down-items'><p>Orders</p></Link>
+                    <Link to='/' className='drop-down-items'><p>Logout</p></Link>
+              </ul>
+              )}
+            </div>
         </div>
           {/* <div>
           <img src={assets.menuResp} className='menu-resp' alt="" />
