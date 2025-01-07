@@ -349,6 +349,17 @@ a:link {
     /* font-size: 2vw; */
 }
 
+
+/***Shop***/
+.shop-container {
+    display: flex;
+}
+
+.all-products {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 /**Animations**/
 @-webkit-keyframes flash {
     0% {  opacity: .3;  }
