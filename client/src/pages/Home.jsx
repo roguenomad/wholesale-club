@@ -5,7 +5,6 @@ import Cards from '../components/Cards'
 import FeaturedCollection from '../components/FeaturedCollection'
 import Information from '../components/Information'
 import FeaturedBrands from '../components/FeaturedBrands'
-import Footer from '../components/Footer'
 
 const Home = () => {
   return (
@@ -15,7 +14,6 @@ const Home = () => {
       <FeaturedCollection />
       <Information />
       <FeaturedBrands />
-      <Footer />
     </div>
   )
 }

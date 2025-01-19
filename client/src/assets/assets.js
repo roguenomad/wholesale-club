@@ -64,7 +64,8 @@ export const products = [
     price: 100,
     image: [astrazeneca],
     dose: ['100mg', '200mg'],
-    bestseller: true
+    bestseller: true,
+    category: 'Diabetes',
    },
    {
     _id: "0002",

@@ -8,10 +8,33 @@ function Collection() {
   const { products } = useContext(ShopContext);
   const [ showFilter,setShowFilter ] = useState(false);
   const [ filterProducts,setFilterProducts ] = useState([]);
+  const [category,setCategory] = useState([]);
+  // const [subCategory,setSubCategory] = useState([]);
 
-  useEffect(()=>{
-    setFilterProducts(products);
-  },[])
+  const toggleCategory = (e) => {
+
+    if (category.includes(e.target.value)) {
+      setCategory(prev=> prev.filter(item => item !== e.target.value))
+    }
+    else {
+      setCategory(prev => [...prev,e.target.value])
+    }
+  }
+
+  const applyFilter = () => {
+    
+    let productsCopy = products.slice();
+
+    if (category.length > 0) {
+      productsCopy = productsCopy.filter(item => category.includes(item.category));
+    }
+    
+    setFilterProducts(productsCopy);
+  }
+
+  useEffect(()=> {
+    applyFilter();
+  },[category])
 
   return (
     <div className='shop-container'>
@@ -23,6 +46,20 @@ function Collection() {
         {showFilter && (
           <div>
             <p>CATEGORIES</p>
+            <div>
+              <p>
+                <input type="checkbox" value={'Diabetes'} onChange={toggleCategory}/> Diabetes
+              </p>
+              <p>
+                <input type="checkbox" value={'Cancer'} onChange={toggleCategory} /> Cancer
+              </p>
+              <p>
+                <input type="checkbox" value={'Weight Loss'} onChange={toggleCategory} /> Weight Loss
+              </p>
+              <p>
+                <input type="checkbox" value={'Impotence'} onChange={toggleCategory} /> Impotence
+              </p>
+            </div>
           </div>
         )}
       </div>
@@ -32,7 +69,7 @@ function Collection() {
         <div>
           <h2>All Products</h2>
         </div>
-        <div>
+        <div className='dropdown-products'>
           <select>
             <option value="relevant">Sort by: Relevant</option>
             <option value="low-high">Sort by: Low to High</option>
@@ -46,6 +83,7 @@ function Collection() {
             ))
           }
         </div>
+
 
       </div>
 
