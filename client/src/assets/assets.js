@@ -14,6 +14,9 @@ import rinvoq from './rinvoq.png'
 import sinovac from './sinovac.png'
 import scherPlo from './schering-plough.png'
 import victoza from './victoza.png'
+import vic1 from './vic-1.png'
+import vic2 from './vict-2.png'
+import vic3 from './vict-3.png'
 import wegovy from './wegovy.png'
 import logo from "./logo.png"
 import shoppingCart from './shopping-cart-icon.png'
@@ -42,6 +45,9 @@ export const assets = {
     scherPlo,
     sinovac,
     victoza,
+    vic1,
+    vic2,
+    vic3,
     wegovy,
     logo,
     shoppingCart,
@@ -71,7 +77,7 @@ export const products = [
     _id: "0002",
     name: 'Amgen',
     description: 'Lorem ipsum',
-    price: 100,
+    price: 200,
     image: [amgen],
     dose: ['100mg', '200mg'],
     bestseller: true
@@ -189,7 +195,7 @@ export const products = [
     name: 'Victoza',
     description: 'Lorem ipsum',
     price: 549.00,
-    image: [amgen],
+    image: [vic1, vic2, vic3, victoza],
     dose: ['1 month supply'],
     bestseller: false
    },

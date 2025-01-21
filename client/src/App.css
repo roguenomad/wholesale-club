@@ -378,6 +378,27 @@ a:link {
     /* background-color: #217126; */
 }
 
+/*Products*/
+
+.pd-container {
+    display: flex;
+}
+.pd-images {
+    /* display: block; */
+    width: 20vw;
+}
+.pd-images img {
+    width: 15vw;
+}
+
+/* .pd-main-img {
+    width: 80vw;
+} */
+.pd-main-img img {
+    width: 50vw;
+    /* width: 80vw; */
+}
+
 
 /****About****/
 .about-container {
