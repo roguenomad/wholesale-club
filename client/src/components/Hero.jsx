@@ -13,7 +13,7 @@ const Hero = () => {
           <h1 className='main-header'>The Global Choice <br/>for Affordable <br/> Health</h1>
           <Link to='/Shop' className='all-pro-but'>All Products</Link>
           {/* <button className='all-pro-but'><span>See All Products</span></button> */}
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi a augue consequat, malesuada mi ut, pharetra nunc. Praesent sagittis posuere convallis. Aliquam elementum, risus sed luctus viverra, tellus sapien pulvinar mauris, non ornare dolor nibh sit amet purus.</p>
+          <p>Featuring: Ozempic, Victoza, Wegovy, Mounjaro, Saxenda at 50% to 65% off major pharmacy prices. We have the largest selection of Erectile Dysfunction products at massive discounts. We also feature solutions for chronic diseases.</p>
       </div>
     </div>
   )

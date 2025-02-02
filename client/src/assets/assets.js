@@ -1,6 +1,13 @@
 import amgen from './amgen-trans.png'
 import astrazeneca from './astrazeneca-trans.png'
 import bayer from './bayer-trans.png'
+import enbrel from './enbrel.png'
+import faq from './faq_rm.png'
+import faq_arrow from './faq_arrow_rm.png'
+import faq_pic_1 from './faq_pic_1_rm.png'
+import faq_pic_2 from './faq_pic_2_rm.png'
+import faq_pic_3 from './faq_pic_3_rm.png'
+import faq_pic_4 from './faq_pic_4_rm.png'
 import johnson from './jo&jo.png'
 import merck from './merck-trans.png'
 import moderna from './moderna.png'
@@ -11,6 +18,7 @@ import pfizer from './pfizer-trans.png'
 import pharma from './pharma.png'
 import pharPart from './pharma-partners.png'
 import rinvoq from './rinvoq.png'
+import rin_1 from './rin_1.png'
 import sinovac from './sinovac.png'
 import scherPlo from './schering-plough.png'
 import victoza from './victoza.png'
@@ -33,15 +41,24 @@ export const assets = {
     amgen,
     astrazeneca,
     bayer,
+    enbrel,
+    faq,
+    faq_arrow,
+    faq_pic_1,
+    faq_pic_2,
+    faq_pic_3,
+    faq_pic_4,
     johnson,
     merck,
     moderna,
+    monjaro,
     mounj,
     nova,
     pfizer,
     pharma,
     pharPart,
     rinvoq,
+    rin_1,
     scherPlo,
     sinovac,
     victoza,
@@ -65,83 +82,84 @@ export const assets = {
 export const products = [
    {
     _id: "0001",
-    name: 'AstraZeneca',
+    name: 'Enbrel',
     description: 'Lorem ipsum',
     price: 100,
-    image: [astrazeneca],
+    image: [enbrel],
     dose: ['100mg', '200mg'],
     bestseller: true,
     category: 'Diabetes',
    },
    {
     _id: "0002",
-    name: 'Amgen',
+    name: 'Lipitor',
     description: 'Lorem ipsum',
     price: 200,
-    image: [amgen],
+    image: [],
     dose: ['100mg', '200mg'],
     bestseller: true
    },
    {
     _id: "0003",
-    name: 'Bayer',
+    name: 'Mounjaro',
     description: 'Lorem ipsum',
     price: 100,
-    image: [bayer],
+    image: [monjaro],
+    info: [amgen],
     dose: ['100mg', '200mg'],
     bestseller: true
    },
    {
     _id: "0004",
-    name: 'Johnson & Johnson',
+    name: 'Nurtec',
     description: 'Lorem ipsum',
     price: 100,
-    image: [johnson],
+    image: [],
     dose: ['100mg', '200mg'],
     bestseller: false
    },
    {
     _id: "0005",
-    name: 'Merck',
+    name: 'Plavix',
     description: 'Lorem ipsum',
     price: 100,
-    image: [merck],
+    image: [],
     dose: ['100mg', '200mg'],
     bestseller: false
    },
    {
     _id: "0006",
-    name: 'Moderna',
+    name: 'Rinvoq',
     description: 'Lorem ipsum',
     price: 100,
-    image: [moderna],
+    image: [rin_1],
     dose: ['100mg', '200mg'],
     bestseller: false
    },
    {
     _id: "0007",
-    name: 'Monjaro',
+    name: 'Saxenda',
     description: 'Lorem ipsum',
     price: 100,
-    image: [monjaro],
+    image: [],
     dose: ['100mg', '200mg'],
     bestseller: false
    },
    {
     _id: "0008",
-    name: 'Novartis',
+    name: 'Victoza',
     description: 'Lorem ipsum',
     price: 100,
-    image: [nova],
+    image: [vic1, vic2, vic3, victoza],
     dose: ['100mg', '200mg'],
     bestseller: false
    },
    {
     _id: "0009",
-    name: 'Pfizer',
+    name: 'Wegovy',
     description: 'Lorem ipsum',
     price: 100,
-    image: [amgen],
+    image: [wegovy],
     dose: ['100mg', '200mg'],
     bestseller: false
    },
@@ -150,7 +168,7 @@ export const products = [
     name: 'Pharma',
     description: 'Lorem ipsum',
     price: 100,
-    image: [amgen],
+    image: [],
     dose: ['100mg', '200mg'],
     bestseller: false
    },
@@ -159,7 +177,7 @@ export const products = [
     name: 'Pharma Partners',
     description: 'Lorem ipsum',
     price: 100,
-    image: [amgen],
+    image: [],
     dose: ['100mg', '200mg'],
     bestseller: false
    },
@@ -168,7 +186,7 @@ export const products = [
     name: 'Rinvoq',
     description: 'Lorem ipsum',
     price: 100,
-    image: [amgen],
+    image: [],
     dose: ['100mg', '200mg'],
     bestseller: false
    },
@@ -177,7 +195,7 @@ export const products = [
     name: 'Schering-Plough',
     description: 'Lorem ipsum',
     price: 100,
-    image: [amgen],
+    image: [],
     dose: ['100mg', '200mg'],
     bestseller: false
    },
@@ -186,7 +204,7 @@ export const products = [
     name: 'Sinovac',
     description: 'Lorem ipsum',
     price: 100,
-    image: [amgen],
+    image: [],
     dose: ['100mg', '200mg'],
     bestseller: false
    },
@@ -195,7 +213,7 @@ export const products = [
     name: 'Victoza',
     description: 'Lorem ipsum',
     price: 549.00,
-    image: [vic1, vic2, vic3, victoza],
+    image: [],
     dose: ['1 month supply'],
     bestseller: false
    },
@@ -204,7 +222,7 @@ export const products = [
     name: 'Wegovy',
     description: 'Lorem ipsum',
     price: 100,
-    image: [amgen],
+    image: [],
     dose: ['100mg', '200mg'],
     bestseller: false
    },

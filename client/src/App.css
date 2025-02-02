@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #e9ebef;
+    background-color: var(--gray);
     margin: 0;
     padding: 0;
 }
@@ -13,6 +13,7 @@ body {
     --green: #217126;
     --blue: #2A1BA8;
     --light-green: #ceeddb;
+    --gray: #e9ebef;
 }
 
 
@@ -243,7 +244,7 @@ a:focus hr {
     justify-self: center;
     padding: 1vh;
     width: 80vw;
-    background-color: #fff;
+    background-color: #e9ebef;
     border-radius: 25px;
     box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.24);
     -webkit-box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.24);
@@ -288,6 +289,66 @@ a:focus hr {
 
 /* .card-p {
 } */
+
+
+/*** Our Products ***/
+
+.our-pro {
+    /* position: absolute; */
+}
+.all-pro {
+    color: #000;
+    display: flex;
+    justify-self: flex-end;
+    transform: translate(-10vw, -15vh);
+    /* margin-right: 10vh; */
+    /* padding-bottom: 10vh; */
+    /* text-decoration: underline; */
+} 
+.all-pro:hover {
+    font-weight: 700;
+}
+
+.card-products {
+    display: flex;
+    align-items: flex-end;
+    justify-self: center;
+    /* width: 80vw; */
+}
+
+.card-product {
+    width: 15vw;
+}
+.card-pro-img {
+    width: 10vw;
+}
+.pro-desc {
+    font-weight: 550;
+}
+.price-strike {
+    text-decoration: line-through;
+    text-decoration-color: red ;
+    color: #888;
+} 
+
+.card-product {
+    text-align: center;
+    margin: 3vh;
+}
+.card-product span {
+    margin: 3px;
+    /* width: 30vw; */
+}
+
+.card-product button {
+    background-color: var(--green);
+    color: #fff;
+    padding: 1vh 2vh;
+    font-size: 1vw;
+    border-radius: 25px;
+    cursor: pointer;
+    border: none;
+}
 
 /***Featured Collection***/
 
@@ -381,6 +442,9 @@ a:link {
 /*Products*/
 
 .pd-container {
+    /* display: flex; */
+}
+.pd-img-cont {
     display: flex;
 }
 .pd-images {
@@ -400,15 +464,22 @@ a:link {
 }
 
 
-/****About****/
+/****FAQ****/
 .about-container {
     /* display: flex; */
     /* align-self: center; */
     justify-self: center;
     background-color: var(--light-green);
     width: 80vw;
+    margin: 5vh;
 }
 
+.faq-header {
+    width: 20vw;
+    display: flex;
+    justify-self: center;
+    padding: 5vh;
+}
 .about-container span {
     text-align: center;
     display: flex;
@@ -433,26 +504,24 @@ a:link {
     border: var(--blue) solid 1px;
     border-radius: 10px;
     height: 250px;
-    width: 400px;
+    width: 550px;
     margin: 5vh 0;
+    /* display: flex; */
 }
 
-.about-steps span {
-    margin: 1vh;
-    font-size: 15px;
-    height: 25px;
-    width: 25px;
-    background-color: var(--blue);
-    border-radius: 50%;
-    display: inline-block;
-    color: #fff;
-    text-align: center;
-
-}
 
 .about-steps p {
     padding: 1vh;
-    text-align: center;
+    /* display: block;
+    float: left; */
+    /* display: flex;
+    flex-wrap: wrap; */
+    /* padding: 1vh; */
+    /* text-align: center; */
+}
+.faq_pics {
+    height: 20vh;
+    width: auto;
 }
 
 /**Animations**/
@@ -752,7 +821,15 @@ textarea {
         width: 70%;
     }
     
+    .card-main {
+        background-color: #fff;
+        margin: 3vw;
+        border-radius: 10px;
+    }
 
+    .card-container {
+        background-color: ;
+    }
 
     .cards {
         padding-top: 2vh;
@@ -766,9 +843,11 @@ textarea {
         /* width: 100%; */
     }
 
+    
+
     /**Feat Products**/
     .featured h3 {
-        font-size: 2.25vw;
+        font-size: 3vw;
     }
     .featured-cards {
         display: flex;

@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
 import { ShopContext } from '../context/ShopContext';
+import { assets } from '../assets/assets'
 
 const Product = () => {
 
@@ -38,15 +39,20 @@ const Product = () => {
 
   return productData ? (
     <div className='pd-container'>
+      <div className='pd-img-cont'>
       <div className='pd-images'>
         {
           productData.image.map((item,index)=>(
             <img onClick={()=>setImage(item)} src={item} key={index}/>
           ))
         }
+      </div>    
       </div>
       <div className='pd-main-img'>
         <img src={image} alt="" />
+      </div>
+      <div className='pd-med-info'>
+        <img src={productData.info} alt='' />
       </div>
       <div>
         <h3>{productData.name}</h3>
@@ -56,7 +62,11 @@ const Product = () => {
         <button>Add to Cart</button> 
 
       </div>
+      
     </div>
-  ) : <div className='opacity-0'></div>
+  ) : <div className='opacity-0'>
+    
+  </div>
+  
 }
 export default Product
