@@ -21,7 +21,7 @@ const FeaturedBrands = () => {
         <img src={assets.pfizer} className='fb-image' alt="" />
         <img src={assets.pharma} className='fb-image' alt="" />
         <img src={assets.pharPart} className='fb-image' alt="" />
-        <img src={assets.rinvoq} className='fb-image' alt="" />
+        <img src={assets.rin_logo} className='fb-image' alt="" />
         <img src={assets.scherPlo} className='fb-image' alt="" />
         <img src={assets.victoza} className='fb-image' alt="" />
         </div>

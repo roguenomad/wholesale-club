@@ -1,12 +1,15 @@
-import { React, useState } from 'react'
+import { React, useContext, useState } from 'react'
 import { assets } from '../assets/assets'
 import '../App.css'
 import { Link, NavLink } from 'react-router-dom'
+import { ShopContext } from '../context/ShopContext'
 
 
 const Navbar = () => {
 
   const [isDropdownVisible, setDropdownVisible] = useState(false);
+
+  const {getCartCount} = useContext(ShopContext);
 
   const handleMouseEnter = () => {
     setDropdownVisible(true);
@@ -31,6 +34,7 @@ const Navbar = () => {
               <Link to='/cart' className='cart-container'>
                 <h4>$0.00</h4>
                 <img src={assets.shoppingCart} className='cart-icon' alt="" />
+                <p>{getCartCount()}</p>
               </Link>
           </div>
           <div className="user-profile" onMouseEnter={handleMouseEnter}

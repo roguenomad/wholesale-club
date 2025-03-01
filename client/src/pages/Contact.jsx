@@ -1,9 +1,12 @@
 import React from 'react'
+import { assets } from '../assets/assets'
 
 const Content = () => {
   return (
     <div className='cont-head'>
+      <div className='cont-header'>
       <h2>Support</h2>
+      </div>
       <div className='cont-content'>
         <div className='cont-text'>
           <h6>Contact Us</h6>
@@ -22,6 +25,11 @@ const Content = () => {
           {/* <textarea>MEssage</textarea> */}
           {/* <button>Submit</button> */}
         </div>
+      </div>
+      <div className='cont-bott'>
+          <img src={assets.sl_map} className='cont-img' alt="" />
+          <img src={assets.wtc} className='cont-img' alt="" />
+          <img src={assets.pan_map} className='cont-img' alt="" />
       </div>
     </div>
   )

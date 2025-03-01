@@ -63,13 +63,13 @@ function Collection() {
   return (
     <div className='shop-container'>
       <div className="filters">
-        <p>FILTERS</p>
+        <p className='filter'>Filters</p>
         <button onClick={() => setShowFilter(!showFilter)}>
-          {showFilter ? 'Hide content' : 'Show content'}
+          {showFilter ? 'Hide' : 'Show'}
         </button>
         {showFilter && (
           <div>
-            <p>CATEGORIES</p>
+            {/* <p>CATEGORIES</p> */}
             <div>
               <p>
                 <input type="checkbox" value={'Diabetes'} onChange={toggleCategory}/> Diabetes
@@ -106,6 +106,7 @@ function Collection() {
               <ProductItem key={index} name={item.name} id={item._id} price={item.price} image={item.image} />
             ))
           }
+          {/* <button>hello</button> */}
         </div>
 
 

@@ -21,18 +21,18 @@ const Information = () => {
             </div>
             <div className='info-links'>
                 <div className="info-link grow">
-                    <img src={assets.monjaro} className='info-link-img' alt="" />
+                    <img src={assets.vic1} className='info-link-img' alt="" />
                     <h4 className='info-link-text'>Weight Loss</h4>
                     <Link to='/'><button className='info-link-btn'>View</button> </Link>
                 </div>
                 <div className="info-link grow">
-                    <img src={assets.monjaro} className='info-link-img' alt="" />
+                    <img src={assets.cen_soft_100} className='info-link-img' alt="" />
                     <h4 className='info-link-text'>Impotence</h4>
                     <button className='info-link-btn'>View</button>
                 </div>
                 <div className="info-link grow">
-                    <img src={assets.monjaro} className='info-link-img' alt="" />
-                    <h4 className='info-link-text'>Long-term</h4>
+                    <img src={assets.rin_1} className='info-link-img' alt="" />
+                    <h4 className='info-link-text'>Chronic Diseases</h4>
                     <button className='info-link-btn'>View</button>
                 </div>
                 <div className="info-link grow">

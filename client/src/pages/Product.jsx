@@ -16,16 +16,16 @@ const Product = () => {
 
 
   const {productId} = useParams();
-  const {products} = useContext(ShopContext);
+  const {products,addToCart} = useContext(ShopContext);
   const [productData,setProductData] = useState(false);
   const [image,setImage] = useState('')
+  const [size,setSize] = useState('')
 
   const fetchProductData = async () => {
 
     products.map((item) => {
       if (item._id === productId) {
         setProductData(item)
-        console.log(item)
         setImage(item.image[0])
         return null;
       }
@@ -39,31 +39,45 @@ const Product = () => {
 
   return productData ? (
     <div className='pd-container'>
-      <div className='pd-img-cont'>
-      <div className='pd-images'>
-        {
-          productData.image.map((item,index)=>(
-            <img onClick={()=>setImage(item)} src={item} key={index}/>
-          ))
-        }
-      </div>    
+        <div className='pd-img-cont'>
+          
+          <div className='pd-images'>
+            {
+              productData.image.map((item,index)=>(
+                <img onClick={()=>setImage(item)} src={item} key={index}/>
+              ))
+            }
+          </div>  
+          <div className='pd-cont-1'>
+            <div className='pd-logo'>
+            <img src={productData.logo} alt='' />
+            </div>
+            <div className='pd-main-img'>
+              <img src={image} alt="" />
+            </div> 
+          </div>
+          <div>
+            <div className='pd-med-prices'>
+            <img src={productData.prices} alt='' />
+            </div>
+            
+            <div className='pd-button'>
+              {/* <h3>{productData.name}</h3>
+              <p>${productData.price}</p> */}
+              {/* <img src={productData.info} alt='' /> */}
+              <span>{productData.description}</span>
+              {/* 302555 */}
+              <button onClick={()=>addToCart(productData._id,size )}>Add to Cart</button> 
+            </div>
+          </div>
       </div>
-      <div className='pd-main-img'>
-        <img src={image} alt="" />
-      </div>
-      <div className='pd-med-info'>
-        <img src={productData.info} alt='' />
-      </div>
-      <div>
-        <h3>{productData.name}</h3>
-        <p>${productData.price}</p>
-        <span>{productData.description}</span>
-        {/* 302555 */}
-        <button>Add to Cart</button> 
-
-      </div>
+      {/* <div className='pd-med-info'>
+          <img src={productData.info} alt='' />
+      </div> */}
+        
+       </div>
       
-    </div>
+    
   ) : <div className='opacity-0'>
     
   </div>
